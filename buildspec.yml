@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - sam package --s3-bucket kratikasharma2-bucket --template-file Template.yml --output-template-file outputSamTemplate.yml
+      - sam package --s3-bucket kratikasharma2 --template-file Template.yml --output-template-file outputSamTemplate.yml
       - ls -la build/libs
 artifacts:
   files:
